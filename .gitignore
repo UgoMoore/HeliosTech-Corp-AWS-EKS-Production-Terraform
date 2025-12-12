@@ -1,11 +1,19 @@
-# Terraform files
+# Terraform sensitive files
+*.tfvars
 *.tfstate
 *.tfstate.backup
 .terraform/
-
-# Environment variables
 .env
 
-# OS files
-.DS_Store
+# Ignore crash logs and temporary files
+*.log
+*.bak
+*.tmp
+*.swp
+
+
+# Optional: Ignore OS-specific files (OS / editor files)
+*.DS_Store
+*.vscode/
+*.idea/
 Thumbs.db

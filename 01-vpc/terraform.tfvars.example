@@ -1,21 +1,28 @@
-project = "heliostech"
+# 01-vpc/terraform.tfvars.example
 
+# Name of the project
+project = "your_project_name_here"
+
+# AWS region
 aws_region = "us-east-1"
 
+# VPC CIDR block
 vpc_cidr = "10.0.0.0/16"
 
+# Public subnet CIDR blocks
 public_subnet_cidrs = [
   "10.0.1.0/24",
   "10.0.2.0/24"
 ]
 
+# Private subnet CIDR blocks
 private_subnet_cidrs = [
   "10.0.3.0/24",
   "10.0.4.0/24"
 ]
 
+# Availability zones
 azs = [
   "us-east-1a",
   "us-east-1b"
 ]
-

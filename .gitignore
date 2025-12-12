@@ -17,3 +17,8 @@
 *.vscode/
 *.idea/
 Thumbs.db
+.env
+*.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/

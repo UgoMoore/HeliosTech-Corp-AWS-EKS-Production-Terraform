@@ -154,8 +154,9 @@ This project follows a **professional SOC / DevOps documentation style**, emphas
 
 ---
 
-## 📌 Notes
+## ⚠️ Disclaimer
 This repository is intended for **educational, portfolio, and demonstration purposes**, reflecting real-world production patterns used in enterprise cloud environments.
+Do not deploy to production without additional hardening, monitoring, and compliance controls.
 
 ---
 

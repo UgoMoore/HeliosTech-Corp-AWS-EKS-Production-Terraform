@@ -1,32 +1,19 @@
 variable "project" {
-  type = string
-}
-
-variable "vpc_id" {
-  type = string
-}
-
-variable "private_subnet_ids" {
-  type = list(string)
+  description = "Project name prefix"
+  type        = string
 }
 
 variable "instance_type" {
-  type    = string
-  default = "t3.micro"
+  description = "EC2 instance type for the bastion host"
+  type        = string
+  default     = "t3.micro"
 }
 
 variable "tags" {
-  type    = map(string)
-  default = {}
-}
-
-variable "key_name" {
-  type = string
-  description = "Name of the AWS key pair for SSH access (optional if using SSM)"
-}
-
-variable "public_subnet_ids" {
-  type = list(string)
-  description = "Optional public subnets for bastion if needed (SSM-managed is default)"
-  default = []
+  description = "Tags applied to bastion resources"
+  type        = map(string)
+  default = {
+    Environment = "production"
+    Project     = "HeliosTech"
+  }
 }

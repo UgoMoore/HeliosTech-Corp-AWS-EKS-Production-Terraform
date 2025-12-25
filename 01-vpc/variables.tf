@@ -1,30 +1,24 @@
 variable "project" {
-  type        = string
   description = "Project name prefix"
-}
-
-variable "aws_region" {
   type        = string
-  description = "AWS region for deployment"
 }
 
 variable "vpc_cidr" {
-  type        = string
   description = "CIDR block for the VPC"
+  type        = string
 }
 
 variable "public_subnet_cidrs" {
-  type        = list(string)
   description = "Public subnet CIDRs"
+  type        = list(string)
 }
 
 variable "private_subnet_cidrs" {
-  type        = list(string)
   description = "Private subnet CIDRs"
+  type        = list(string)
 }
 
 variable "azs" {
-  type        = list(string)
   description = "Availability zones"
+  type        = list(string)
 }
-

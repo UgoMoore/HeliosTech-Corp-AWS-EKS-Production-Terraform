@@ -122,6 +122,26 @@ kubectl get nodes
 ```bash
 aws eks describe-cluster --name heliostech-eks
 ```
+***+++=== ## 📸 Deployment Evidence
+
+### Terraform Infrastructure Provisioning
+![Terraform Apply](images/terraform-apply.png)
+
+### EKS Cluster Active
+![EKS Cluster](images/eks-cluster-active.png)
+
+### Managed Node Group
+![Node Group](images/eks-nodegroup.png)
+
+### kubectl Cluster Access via Bastion
+![kubectl nodes](images/kubectl-nodes.png)
+images/
+├── terraform-apply.png
+├── vpc-subnets.png
+├── eks-cluster-active.png
+├── eks-nodegroup.png
+├── bastion-instance.png
+├── kubectl-nodes.png
 
 ---
 

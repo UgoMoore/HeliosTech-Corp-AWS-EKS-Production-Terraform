@@ -51,7 +51,7 @@ HeliosTech-Corp-AWS-EKS-Production-Terraform/
 ├── 01-vpc/                 # Networking layer (VPC, subnets, NAT)
 ├── 02-bastion/             # Bastion / jumpbox host
 ├── 03-eks/                 # EKS cluster & managed node groups
-├── images/
+├── images/                 # Deployment evidence (screenshots)
 ├── modules/                # Reusable Terraform modules
 │   ├── vpc/
 │   ├── bastion/
@@ -176,24 +176,41 @@ aws eks describe-cluster --name HeliosTech
 
 
 ### 1️⃣ Terraform Infrastructure Provisioning ![Interface Selection](https://github.com/UgoMoore/HeliosTech-Corp-AWS-EKS-Production-Terraform/blob/main/images/1.%20Terraform%20apply.jpg) 
+
 *Successful execution of Terraform apply, confirming automated provisioning of AWS infrastructure components without errors.*
 
+---
+
 ### 2️⃣ VPC & Subnets Configuration ![Interface Selection](https://github.com/UgoMoore/HeliosTech-Corp-AWS-EKS-Production-Terraform/blob/main/images/2.%20VPC%20flowchart.jpg) 
+
 *Custom Virtual Private Cloud (VPC) with segmented public and private subnets, providing network isolation and controlled routing for EKS resources.
 
+---
+
 ### 3️⃣ Bastion Host Instance ![Interface Selection](https://github.com/UgoMoore/HeliosTech-Corp-AWS-EKS-Production-Terraform/blob/main/images/3.%20Bastion%20jump%20box.jpg) 
+
 *Hardened bastion host deployed as a controlled entry point for administrative access into the private AWS environment.
 
+---
+
 ### 4️⃣ EKS Cluster Active ![Interface Selection](https://github.com/UgoMoore/HeliosTech-Corp-AWS-EKS-Production-Terraform/blob/main/images/4.%20EKS%20cluster%20created%20(ACTIVE).jpg) 
+
 *Amazon EKS control plane successfully created and in an active state, serving as the orchestration layer for Kubernetes workloads.
 
+---
+
 ### 5️⃣ Managed Node Group – Configuration & Status ![Interface Selection](https://github.com/UgoMoore/HeliosTech-Corp-AWS-EKS-Production-Terraform/blob/main/images/5.1.%20EKS%20cluster%20node%20group(s).jpg) 
+
 *AWS CLI verification confirming that a managed node group was successfully created and registered with the HeliosTech EKS control plane, indicating correct IAM role association and cluster integration.
 
 ![Interface Selection](https://github.com/UgoMoore/HeliosTech-Corp-AWS-EKS-Production-Terraform/blob/main/images/5.2.%20EKS%20cluster%20node%20group(s)%20on%20AWS%20Console.jpg) 
+
 *EKS console view showing the managed node group in an Active state, confirming that worker nodes were successfully provisioned, joined the cluster, and are ready to run Kubernetes workloads.
 
+---
+
 ### 6️⃣ kubectl Access via Bastion ![Interface Selection](https://github.com/UgoMoore/HeliosTech-Corp-AWS-EKS-Production-Terraform/blob/main/images/6.%20kubectl%20nodes%20-%20Active%20nodes.jpg) 
+
 *Verified Kubernetes access via bastion host, confirming successful node registration and cluster connectivity using kubectl.
 
 ---
